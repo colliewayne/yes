@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collins frontend development routine</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(blue, red, rgb(83, 83, 255));
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        /* background: white; */
+        background: linear-gradient(
+          rgb(253, 253, 253),
+          rgb(73, 73, 223),
+          rgb(253, 253, 253)
+        );
+        border: 5px solid rgb(108, 108, 253);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      .week {
+        margin-bottom: 20px;
+        padding: 15px;
+        /* background: #e8e8e8; */
+        background: wheat;
+        border-radius: 5px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .next-button {
+        width: 100%;
+        height: 70px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .next {
+        padding: 13px 50px;
+        border-radius: 5rem;
+        border: 3px solid rgb(91, 91, 253);
+        outline: none;
+        cursor: pointer;
+        transition: 0.5s;
+        background: linear-gradient(
+          rgb(194, 184, 250),
+          rgb(16, 16, 216),
+          rgb(194, 184, 250)
+        );
+        color: white;
+        font-weight: 700;
+        font-size: 1rem;
+      }
+
+      .next:hover {
+        background: linear-gradient(
+          rgb(153, 137, 248),
+          rgb(12, 12, 184),
+          rgb(169, 156, 247)
+        );
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelectorAll("input[type=checkbox]")
+          .forEach(function (checkbox) {
+            let id = checkbox.nextSibling.textContent.trim();
+            checkbox.checked = localStorage.getItem(id) === "true";
+            checkbox.addEventListener("change", function () {
+              localStorage.setItem(id, checkbox.checked);
+            });
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Frontend Developer Learning Routine</h1>
+
+      <div class="week">
+        <h2>Week 1: HTML Basics</h2>
+        <ul>
+          <li><input type="checkbox" /> Day 1: Introduction to HTML</li>
+          <li><input type="checkbox" /> Day 2: Text elements & headings</li>
+          <li><input type="checkbox" /> Day 3: Lists & Links</li>
+          <li><input type="checkbox" /> Day 4: Images & Tables</li>
+          <li><input type="checkbox" /> Day 5: Forms & Inputs</li>
+          <li><input type="checkbox" /> Day 6: Semantic HTML</li>
+          <li><input type="checkbox" /> Day 7: Practice Project</li>
+        </ul>
+      </div>
+
+      <div class="week">
+        <h2>Week 2: CSS Fundamentals</h2>
+        <ul>
+          <li><input type="checkbox" /> Day 8: Introduction to CSS</li>
+          <li><input type="checkbox" /> Day 9: Colors & Backgrounds</li>
+          <li><input type="checkbox" /> Day 10: Box Model</li>
+          <li><input type="checkbox" /> Day 11: Typography & Fonts</li>
+          <li><input type="checkbox" /> Day 12: CSS Positioning</li>
+          <li><input type="checkbox" /> Day 13: Flexbox</li>
+          <li><input type="checkbox" /> Day 14: Animations & Transitions</li>
+        </ul>
+      </div>
+
+      <div class="week">
+        <h2>Week 3: JavaScript Basics</h2>
+        <ul>
+          <li><input type="checkbox" /> Day 15: Introduction to JavaScript</li>
+          <li><input type="checkbox" /> Day 16: Data Types & Variables</li>
+          <li><input type="checkbox" /> Day 17: Operators & Expressions</li>
+          <li><input type="checkbox" /> Day 18: Conditional Statements</li>
+          <li><input type="checkbox" /> Day 19: Loops</li>
+          <li><input type="checkbox" /> Day 20: Functions</li>
+          <li><input type="checkbox" /> Day 21: Practice Project</li>
+        </ul>
+      </div>
+
+      <div class="week">
+        <h2>Week 4: Project & Review</h2>
+        <ul>
+          <li><input type="checkbox" /> Day 22: Plan a Simple Project</li>
+          <li><input type="checkbox" /> Day 23: Build the HTML Structure</li>
+          <li><input type="checkbox" /> Day 24: Style with CSS</li>
+          <li>
+            <input type="checkbox" /> Day 25: Add JavaScript Interactivity
+          </li>
+          <li><input type="checkbox" /> Day 26: Debugging & Testing</li>
+          <li><input type="checkbox" /> Day 27: Code Review & Optimization</li>
+          <li>
+            <input type="checkbox" /> Day 28: Reflection & Planning Next Month
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="next-button">
+      <a href="next-page.html" action="next-page.html"
+        ><button class="next" type="button">Next Routine</button></a
+      >
+    </div>
+  </body>
+</html>

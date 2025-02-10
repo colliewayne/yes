@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Frontend Roadmap</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      .roadmap-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+      .week {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        min-width: 300px;
+      }
+      .week h3 {
+        color: #007bff;
+        text-align: center;
+      }
+      .task {
+        margin-bottom: 10px;
+      }
+      .notes {
+        margin-top: 29px;
+      }
+      .notes-input {
+        margin-top: 9px;
+      }
+      textarea {
+        width: 100%;
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Professional Frontend Developer Roadmap</h1>
+
+    <div class="roadmap-container">
+      <!-- Month 1: Web Performance, JavaScript, Security -->
+      <div class="week">
+        <h3>Month 1: Web Performance & JavaScript Mastery</h3>
+        <div class="task">
+          <label
+            ><input
+              type="checkbox"
+              class="task-checkbox"
+              data-id="lighthouse"
+            />
+            Lighthouse, Lazy Loading</label
+          >
+        </div>
+        <div class="task">
+          <label
+            ><input type="checkbox" class="task-checkbox" data-id="security" />
+            Web Security (XSS, CSRF, CORS)</label
+          >
+        </div>
+        <div class="task">
+          <label
+            ><input type="checkbox" class="task-checkbox" data-id="wasm" />
+            WebAssembly (WASM)</label
+          >
+        </div>
+        <div class="task">
+          <label
+            ><input type="checkbox" class="task-checkbox" data-id="wasmk" />
+            Accessibility (A11Y) - ARIA, keyboard navigation, screen
+            readers</label
+          >
+        </div>
+        <div class="task">
+          <label
+            ><input type="checkbox" class="task-checkbox" data-id="wasml" />
+            Progressive Web Apps (PWAs) - Service workers, offline
+            support</label
+          >
+        </div>
+        <div class="notes">
+          <label>Notes:</label
+          ><textarea class="notes-input" data-id="notes-performance"></textarea>
+        </div>
+      </div>
+
+      <!-- Month 2: Advanced CSS & UI Frameworks -->
+      <div class="week">
+        <h3>Month 2: Advanced CSS & UI Frameworks</h3>
+        <div class="task">
+          <label
+            ><input type="checkbox" class="task-checkbox" data-id="tailwind" />
+            Tailwind CSS, Styled Components</label
+          >
+        </div>
+        <div class="task">
+          <label
+            ><input
+              type="checkbox"
+              class="task-checkbox"
+              data-id="animations"
+            />
+            CSS Animations, GSAP</label
+          >
+        </div>
+        <div class="task">
+          <label
+            ><input
+              type="checkbox"
+              class="task-checkbox"
+              data-id="microfrontends"
+            />
+            Micro-Frontends</label
+          >
+        </div>
+        <div class="task">
+          <label
+            ><input
+              type="checkbox"
+              class="task-checkbox"
+              data-id="microfrontendss"
+            />
+            Data Visualization - D3.js, Chart.js, Recharts</label
+          >
+        </div>
+        <div class="task">
+          <label
+            ><input
+              type="checkbox"
+              class="task-checkbox"
+              data-id="microfrontendsk"
+            />
+            Advanced Browser APIs - WebRTC, Geolocation, IndexedDB</label
+          >
+        </div>
+        <div class="notes">
+          <label>Notes:</label
+          ><textarea class="notes-input" data-id="notes-css"></textarea>
+        </div>
+      </div>
+
+      <!-- Month 3: Advanced React, Next.js, TypeScript -->
+      <div class="week">
+        <h3>Month 3: Advanced React & Next.js</h3>
+        <div class="task">
+          <label
+            ><input type="checkbox" class="task-checkbox" data-id="react" />
+            Advanced React (Hooks, Context API)</label
+          >
+        </div>
+        <div class="task">
+          <label
+            ><input type="checkbox" class="task-checkbox" data-id="nextjs" />
+            Next.js (SSR, ISR, Edge Functions)</label
+          >
+        </div>
+        <div class="task">
+          <label
+            ><input
+              type="checkbox"
+              class="task-checkbox"
+              data-id="typescript"
+            />
+            TypeScript (Interfaces, Generics)</label
+          >
+        </div>
+        <div class="task">
+          <label
+            ><input
+              type="checkbox"
+              class="task-checkbox"
+              data-id="typescriptl"
+            />
+            WebSockets & Real-time Data – Firebase, GraphQL Subscriptions</label
+          >
+        </div>
+        <div class="task">
+          <label
+            ><input
+              type="checkbox"
+              class="task-checkbox"
+              data-id="typescriptm"
+            />
+            Testing & Debugging – Jest, Cypress, React Testing Library</label
+          >
+        </div>
+        <div class="notes">
+          <label>Notes:</label
+          ><textarea class="notes-input" data-id="notes-react"></textarea>
+        </div>
+      </div>
+
+      <!-- Month 4: Backend for Frontend, DevOps -->
+      <div class="week">
+        <h3>Month 4: Backend for Frontend & Deployment</h3>
+        <div class="task">
+          <label
+            ><input type="checkbox" class="task-checkbox" data-id="nodejs" />
+            Node.js & Express (API Development)</label
+          >
+        </div>
+        <div class="task">
+          <label
+            ><input type="checkbox" class="task-checkbox" data-id="ai" />
+            AI-powered UI (ChatGPT, LangChain)</label
+          >
+        </div>
+        <div class="task">
+          <label
+            ><input type="checkbox" class="task-checkbox" data-id="ci-cd" />
+            CI/CD, Docker, Vercel</label
+          >
+        </div>
+        <div class="task">
+          <label
+            ><input type="checkbox" class="task-checkbox" data-id="ci-cm " />
+            Frontend Build Tools - Webpack, Vite, Babel, ESLint, Prettier
+          </label>
+        </div>
+        <div class="notes">
+          <label>Notes:</label
+          ><textarea class="notes-input" data-id="notes-devops"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      "
+      class="success"
+    >
+      <p style="color: rgb(65, 64, 64); font-size: 16px">
+        Success to your Expolarion
+      </p>
+    </div>
+    <script>
+      function saveCheckboxState() {
+        document.querySelectorAll(".task-checkbox").forEach((checkbox) => {
+          localStorage.setItem(checkbox.dataset.id, checkbox.checked);
+        });
+      }
+
+      function loadCheckboxState() {
+        document.querySelectorAll(".task-checkbox").forEach((checkbox) => {
+          checkbox.checked =
+            localStorage.getItem(checkbox.dataset.id) === "true";
+        });
+      }
+
+      function saveNotes() {
+        document.querySelectorAll(".notes-input").forEach((note) => {
+          localStorage.setItem(note.dataset.id, note.value);
+        });
+      }
+
+      function loadNotes() {
+        document.querySelectorAll(".notes-input").forEach((note) => {
+          const savedNote = localStorage.getItem(note.dataset.id);
+          if (savedNote !== null) note.value = savedNote;
+        });
+      }
+
+      document.querySelectorAll(".task-checkbox").forEach((checkbox) => {
+        checkbox.addEventListener("change", saveCheckboxState);
+      });
+
+      document.querySelectorAll(".notes-input").forEach((note) => {
+        note.addEventListener("input", saveNotes);
+      });
+
+      window.onload = function () {
+        loadCheckboxState();
+        loadNotes();
+      };
+    </script>
+  </body>
+</html>
